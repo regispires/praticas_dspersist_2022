@@ -1,3 +1,5 @@
+package br.ufc.quixada.dspersist;
+
 import java.util.List;
 
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlElementWrapper;

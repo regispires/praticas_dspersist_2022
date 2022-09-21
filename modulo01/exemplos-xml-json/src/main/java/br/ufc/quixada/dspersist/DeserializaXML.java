@@ -1,3 +1,5 @@
+package br.ufc.quixada.dspersist;
+
 import java.io.File;
 
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;

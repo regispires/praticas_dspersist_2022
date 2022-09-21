@@ -1,4 +1,9 @@
+package br.ufc.quixada.dspersist;
+
+import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
+
 public class Pessoa {
+    @JacksonXmlProperty(isAttribute = true)
     private int id;
     private String nome;
 

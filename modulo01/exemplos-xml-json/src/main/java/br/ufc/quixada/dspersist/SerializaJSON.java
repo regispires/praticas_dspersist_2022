@@ -1,11 +1,13 @@
+package br.ufc.quixada.dspersist;
+
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
-import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 
-public class SerializaXML {
+public class SerializaJSON {
     public static void main(String[] args) throws Exception {
         Pessoa p1 = new Pessoa(1, "João");
         Pessoa p2 = new Pessoa(2, "Maria");
@@ -13,10 +15,10 @@ public class SerializaXML {
         lista.add(p1);
         lista.add(p2);
         Pessoas p = new Pessoas(lista);
-        File f = new File("pessoas.xml");
+        File f = new File("pessoas.json");
 
-        XmlMapper xm = new XmlMapper();
-        xm.enable(SerializationFeature.INDENT_OUTPUT);
-        xm.writeValue(f, p);
+        ObjectMapper om = new ObjectMapper();
+        om.enable(SerializationFeature.INDENT_OUTPUT);
+        om.writeValue(f, p);
     }
 }

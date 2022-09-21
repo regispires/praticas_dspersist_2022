@@ -1,11 +1,9 @@
 <contatos>
   <pessoas>
-    <pessoa>
-      <id>1</id>
+    <pessoa id="1">
       <nome>João</nome>
     </pessoa>
-    <pessoa>
-      <id>2</id>
+    <pessoa id="2">
       <nome>Maria</nome>
     </pessoa>
   </pessoas>
