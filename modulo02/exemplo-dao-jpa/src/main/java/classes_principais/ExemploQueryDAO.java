@@ -1,7 +1,7 @@
 package classes_principais;
 
 import dao.ContatoDAO;
-import dao.ContatoJPADAOComJPAUtil;
+import dao.ContatoJPADAOSimplificado;
 import entity.Contato;
 
 import java.util.List;
@@ -11,7 +11,7 @@ public class ExemploQueryDAO {
 
         //dao.ContatoDAO contatoDAO = new dao.ContatoJDBCDAO();
         //dao.ContatoDAO contatoDAO = new dao.ContatoJPADAO();
-        ContatoDAO contatoDAO = new ContatoJPADAOComJPAUtil();
+        ContatoDAO contatoDAO = new ContatoJPADAOSimplificado();
 
         List<Contato> contatos = contatoDAO.getLista();
 
